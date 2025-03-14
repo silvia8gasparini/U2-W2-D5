@@ -27,8 +27,12 @@
     </header>
     <main>
       <section class="container">
-        <div class="mx-3 d-flex justify-content-center align-items-center">
-          <h1 class="text-light pb-3">Edit profile</h1>
+        <div
+          class="text-center text-lg-start py-3 mb-4 border-bottom border-color-secondary"
+        >
+          <h1 class="display d-inline-block text-light align-middle">
+            Edit profile
+          </h1>
         </div>
         <section>
           <div class="row">
@@ -43,7 +47,7 @@
               <form class="mb-3">
                 <input
                   type="text"
-                  class="form-control bg-secondary border border-color-secondary text-light w-30"
+                  class="form-control bg-secondary border border-color-secondary text-light"
                   value="Nome Cognome"
                 />
               </form>
@@ -104,18 +108,29 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mt-4 me-auto">
               <button
-                class="px-3 me-5 btn btn-secondary bg-dark text-secondary"
+                type="button"
+                class="btn btn-outline-secondary mb-4 px-4 me-5 btn btn-secondary bg-light text-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
                 SAVE
               </button>
               <button
-                class="px-3 me-5 btn btn-secondary bg-dark text-secondary"
+                type="button"
+                class="btn btn-outline-secondary mb-4 px-4 me-5 btn btn-secondary bg-dark text-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
                 CANCEL
               </button>
-              <button class="px-3 btn btn-secondary bg-dark text-secondary">
+              <button
+                type="button"
+                class="btn btn-outline-secondary mb-4 px-4 btn btn-secondary bg-dark text-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 DELETE PROFILE
               </button>
             </div>
