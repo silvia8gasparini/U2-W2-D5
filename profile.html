@@ -26,119 +26,126 @@
       </nav>
     </header>
     <main>
-      <section class="container">
-        <div
-          class="text-center text-lg-start py-3 mb-4 border-bottom border-color-secondary"
-        >
-          <h1 class="display d-inline-block text-light align-middle">
-            Edit profile
-          </h1>
-        </div>
-        <section>
-          <div class="row">
-            <div
-              class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center"
-            >
-              <div class="profile-icon mb-3">
-                <img height="130" src="./assets/avatar.jpg" alt="avatar" />
-              </div>
-            </div>
-            <div class="col-12 col-md-9 col-lg-9">
-              <form class="mb-3">
-                <input
-                  type="text"
-                  class="form-control bg-secondary border border-color-secondary text-light"
-                  value="Nome Cognome"
-                />
-              </form>
-              <div class="pb-2 mb-3 text-light">
-                <label class="form-label">Language:</label>
-                <div class="dropdown">
-                  <button
-                    class="display-1 d-inline btn btn-light dropdown-toggle bg-dark text-light"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    English
-                  </button>
-                  <ul class="dropdown-menu bg-dark">
-                    <li>
-                      <a class="dropdown-item text-light" href="#">Italiano</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-light" href="#">한국어</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-light" href="#">日本語</a>
-                    </li>
-                  </ul>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <div class="bg-dark">
+              <div class="row">
+                <h1 class="display d-inline-block text-light align-middle mb-3">
+                  Edit profile
+                </h1>
+                <div class="col">
+                  <div class="profile-icon mb-3">
+                    <img height="130" src="./assets/avatar.jpg" alt="avatar" />
+                  </div>
                 </div>
-              </div>
-              <div class="pt-3 mb-3 border-top border-color-secondary">
-                <label class="form-label text-light">Maturity Settings:</label>
-                <div>
-                  <button class="btn btn-secondary w-70">
-                    ALL MATURITY RATINGS
-                  </button>
-                </div>
-              </div>
-              <div class="mb-3 pb-3 border-bottom border-color-secondary">
-                <label class="form-label text-light"
-                  >Show titles of all maturity ratings for this profile.</label
-                >
-                <div>
-                  <button
-                    class="px-3 btn btn-secondary w-70 bg-dark border border-color-secondary text-secondary"
-                  >
-                    EDIT
-                  </button>
-                </div>
-              </div>
+                <div class="col">
+                  <form class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control bg-secondary border border-color-secondary text-light"
+                      value="Nome Cognome"
+                    />
+                  </form>
+                  <div class="pb-2 mb-3 text-light">
+                    <label class="form-label">Language:</label>
+                    <div class="dropdown">
+                      <button
+                        class="display-1 d-inline btn btn-light dropdown-toggle bg-dark text-light"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        English
+                      </button>
+                      <ul class="dropdown-menu bg-dark">
+                        <li>
+                          <a class="dropdown-item text-light" href="#"
+                            >Italiano</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-light" href="#"
+                            >한국어</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-light" href="#"
+                            >日本語</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="pt-3 mb-3 border-top border-color-secondary">
+                    <label class="form-label text-light"
+                      >Maturity Settings:</label
+                    >
+                    <div>
+                      <button class="btn btn-secondary w-70">
+                        ALL MATURITY RATINGS
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mb-3 pb-3 border-bottom border-color-secondary">
+                    <label class="form-label text-light"
+                      >Show titles of all maturity ratings for this
+                      profile.</label
+                    >
+                    <div>
+                      <button
+                        class="px-3 btn btn-secondary w-70 bg-dark border border-color-secondary text-secondary"
+                      >
+                        EDIT
+                      </button>
+                    </div>
+                  </div>
 
-              <div class="mb-3 text-light">
-                <label class="form-label">Autoplay controls</label>
-                <div>
-                  <input type="checkbox" checked /> Autoplay next episode in a
-                  series on all devices.
+                  <div class="mb-3 text-light">
+                    <label class="form-label">Autoplay controls</label>
+                    <div>
+                      <input type="checkbox" checked /> Autoplay next episode in
+                      a series on all devices.
+                    </div>
+                    <div>
+                      <input type="checkbox" checked /> Autoplay previews while
+                      browsing on all devices.
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <input type="checkbox" checked /> Autoplay previews while
-                  browsing on all devices.
+                <div class="d-flex justify-content-between mt-4 me-auto">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary mb-4 px-4 me-5 btn btn-secondary bg-light text-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    SAVE
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary mb-4 px-4 me-5 btn btn-secondary bg-dark text-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    CANCEL
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary mb-4 px-4 btn btn-secondary bg-dark text-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    DELETE PROFILE
+                  </button>
                 </div>
               </div>
-            </div>
-            <div class="d-flex justify-content-center mt-4 me-auto">
-              <button
-                type="button"
-                class="btn btn-outline-secondary mb-4 px-4 me-5 btn btn-secondary bg-light text-dark"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                SAVE
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary mb-4 px-4 me-5 btn btn-secondary bg-dark text-secondary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                CANCEL
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary mb-4 px-4 btn btn-secondary bg-dark text-secondary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                DELETE PROFILE
-              </button>
             </div>
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
